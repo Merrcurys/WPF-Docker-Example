@@ -1,0 +1,15 @@
+C:\WORKS\MPT\Fourth_course\Docker\windows-docker\Biorhythms\bin\Debug\Biorhythms.exe.config
+C:\WORKS\MPT\Fourth_course\Docker\windows-docker\Biorhythms\bin\Debug\Biorhythms.exe
+C:\WORKS\MPT\Fourth_course\Docker\windows-docker\Biorhythms\bin\Debug\Biorhythms.pdb
+C:\WORKS\MPT\Fourth_course\Docker\windows-docker\Biorhythms\obj\Debug\Biorhythms.csproj.AssemblyReference.cache
+C:\WORKS\MPT\Fourth_course\Docker\windows-docker\Biorhythms\obj\Debug\MainWindow.g.cs
+C:\WORKS\MPT\Fourth_course\Docker\windows-docker\Biorhythms\obj\Debug\App.g.cs
+C:\WORKS\MPT\Fourth_course\Docker\windows-docker\Biorhythms\obj\Debug\Biorhythms_MarkupCompile.cache
+C:\WORKS\MPT\Fourth_course\Docker\windows-docker\Biorhythms\obj\Debug\Biorhythms_MarkupCompile.lref
+C:\WORKS\MPT\Fourth_course\Docker\windows-docker\Biorhythms\obj\Debug\MainWindow.baml
+C:\WORKS\MPT\Fourth_course\Docker\windows-docker\Biorhythms\obj\Debug\Biorhythms.g.resources
+C:\WORKS\MPT\Fourth_course\Docker\windows-docker\Biorhythms\obj\Debug\Biorhythms.Properties.Resources.resources
+C:\WORKS\MPT\Fourth_course\Docker\windows-docker\Biorhythms\obj\Debug\Biorhythms.csproj.GenerateResource.cache
+C:\WORKS\MPT\Fourth_course\Docker\windows-docker\Biorhythms\obj\Debug\Biorhythms.csproj.CoreCompileInputs.cache
+C:\WORKS\MPT\Fourth_course\Docker\windows-docker\Biorhythms\obj\Debug\Biorhythms.exe
+C:\WORKS\MPT\Fourth_course\Docker\windows-docker\Biorhythms\obj\Debug\Biorhythms.pdb

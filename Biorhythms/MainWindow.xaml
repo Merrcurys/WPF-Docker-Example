@@ -1,0 +1,30 @@
+﻿<Window x:Class="Biorhythms.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biorhythms"
+        mc:Ignorable="d"
+        Title="Biorhythm Calculator" Height="350" Width="400">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+            <TextBlock Text="Введите дату рождения:" FontSize="16" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+            
+            <Grid Margin="0,0,0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBox x:Name="dayTextBox" Grid.Column="0" Margin="5" TextAlignment="Center" FontSize="14" PreviewTextInput="NumberValidationTextBox"/>
+                <TextBox x:Name="monthTextBox" Grid.Column="1" Margin="5" TextAlignment="Center" FontSize="14" PreviewTextInput="NumberValidationTextBox"/>
+                <TextBox x:Name="yearTextBox" Grid.Column="2" Margin="5" TextAlignment="Center" FontSize="14" PreviewTextInput="NumberValidationTextBox"/>
+            </Grid>
+            
+            <Button x:Name="calculateButton" Content="Рассчитать" FontSize="16" Padding="10" Margin="0,0,0,20" Click="CalculateButton_Click"/>
+            
+            <TextBlock x:Name="resultTextBlock" Text="" FontSize="14" TextWrapping="Wrap" TextAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>
