@@ -1,0 +1,26 @@
+# Используем образ ориентированный на легковесность и нетребовательность к ресурсам
+FROM alpine:latest
+
+# Устанавливаем Wine - «совместимый слой» между программами Windows и Linux
+# Который переводит «язык» каждой программы на язык другой. 
+RUN apk add --no-cache wine
+
+# Копируем скомпилированное WPF-приложение из локальной директории в папку /app
+#! Мое приложение - NET Core 8
+# Убедитесь, что вы указали правильный путь к вашему .exe файлу
+COPY /WPFCore/bin/Debug/net8.0-windows ./app/
+
+# Настраиваем переменную окружения DISPLAY для подключения к X-серверу хоста
+ENV DISPLAY=host.docker.internal:0
+
+#? Сначала сбилдим проект
+# docker build -f Dockerfile.alpine-core -t core-alpine .
+#? Затем дадим имя для удоства обращения и запустим sh
+# docker run -it --rm --name core-alpine-container core-alpine /bin/sh
+#? В запущенном контейнере в sh введем winecfg
+# winecfg
+#? Cкопируем наш dotnet с хост машины в контейнер диска C созданный wine при winecfg
+#! Моя версия dotnet на хост машине - NET Core 8
+# docker cp "C:\Program Files\dotnet" core-alpine-container:"/root/.wine/drive_c/Program Files/dotnet"
+#? После чего запускаем приложение через wine, которое подтянет NET Core, который мы переместили в Program Files
+# wine /app/WPFCore.exe
