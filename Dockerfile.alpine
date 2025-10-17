@@ -1,0 +1,17 @@
+# Используем образ ориентированный на легковесность и нетребовательность к ресурсам
+FROM alpine:latest
+
+# Устанавливаем Wine - «совместимый слой» между программами Windows и Linux
+# Который переводит «язык» каждой программы на язык другой. 
+RUN apk add --no-cache wine
+
+# Копируем скомпилированное WPF-приложение из локальной директории в папку /app
+#! Мое приложение - NET Framework 4.8
+# Убедитесь, что вы указали правильный путь к вашему .exe файлу
+COPY /Biorhythms/bin/Debug/Biorhythms.exe ./app/Biorhythms.exe
+
+# Настраиваем переменную окружения DISPLAY для подключения к X-серверу хоста
+ENV DISPLAY=host.docker.internal:0
+
+# При запуске появится окно "Wine Mono Installer" - нажмите кнопку Install
+CMD ["wine", "/app/Biorhythms.exe"]
