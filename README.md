@@ -2,8 +2,7 @@
 
 <img align="right" height="200" width="200" src="https://raw.githubusercontent.com/scottyhardy/docker-wine/master/images/logo.png" >
 
-Этот проект демонстрирует **экспериментальный способ** запуска WPF-приложений (.NET Framework или .NET Core) внутри Docker-контейнера с использованием [Wine](https://www.winehq.org) — совместимого слоя Windows API для Unix-систем.
-
+Этот проект демонстрирует **экспериментальный способ** запуска WPF-приложений (.NET Framework или .NET Core) внутри Docker-контейнера с использованием [Wine](https://www.winehq.org) — совместимого слоя Windows API для Unix-систем. Статья на Хабре - [клик](https://habr.com/ru/articles/975138/).
 
 > ⚠️ **Важно**:
 > WPF — это технология, которая офицально **не поддерживается на Linux**.
